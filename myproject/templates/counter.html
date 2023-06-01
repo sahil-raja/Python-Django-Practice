@@ -1,1 +1,5 @@
-<h3>The amount of words is {{count}}</h3>
+{%for post in posts%}
+<h1><a href="{% url 'post' post %}">POST</a></h1>
+{%endfor%}
+
+<!-- <h3>The amount of words is {{count}}</h3> -->
